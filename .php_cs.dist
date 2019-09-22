@@ -1,0 +1,28 @@
+<?php
+
+return PhpCsFixer\Config::create()
+    ->setRules([
+        '@Symfony' => true,
+        '@PSR2' => true,
+        '@PHP71Migration' => true,
+        '@PHP71Migration:risky' => true,
+        '@DoctrineAnnotation' => true,
+        'array_syntax' => ['syntax' => 'short'],
+        'single_import_per_statement' => false,
+        'trailing_comma_in_multiline_array' => false,
+        'phpdoc_to_comment' => false,
+        'phpdoc_separation' => false,
+        'phpdoc_align' => false,
+        'concat_space' => false,
+        'braces' => false,
+        'braces' => false,
+    ])
+    ->setRiskyAllowed(true)
+    ->setFinder(
+        PhpCsFixer\Finder::create()
+            ->in(__DIR__)
+            ->exclude([
+                'vendor'
+            ])
+    )
+;
