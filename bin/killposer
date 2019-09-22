@@ -1,0 +1,26 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+requireAutoloader();
+
+use Symfony\Component\Console\Application;
+use Killposer\Command\KillCommand;
+
+$application = new Application();
+$application->add($kill = new KillCommand());
+$application->setDefaultCommand($kill->getName(), true);
+$application->run();
+
+function requireAutoloader(): void
+{
+    foreach ([__DIR__ . '/../vendor/autoload.php', __DIR__ . '/../../../autoload.php'] as $path) {
+        if (\file_exists($path)) {
+            require $path;
+
+            return;
+        }
+    }
+}
+
