@@ -26,7 +26,7 @@ $ export PATH="$PATH:$HOME/.composer/vendor/bin"
 
 Having installed it globally you may now use `killposer` binary:
 ```bash
-$ composer killposer
+$ killposer 
 ```
 
 ### Command options
@@ -40,5 +40,5 @@ $ composer killposer
 Search vendors in `PhpProjects`
 
 ```bash
-$ composer killposer -p '~/PhpProjects/'
+$ killposer -p '~/PhpProjects/'
 ```
