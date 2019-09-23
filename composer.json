@@ -1,6 +1,6 @@
 {
     "name": "tuqqu/killposer",
-    "description": "Find and delete unused composer /vendor/ directories.",
+    "description": "Find and delete composer /vendor/ directories you do not need any more.",
     "type": "library",
     "license": "MIT",
     "authors": [

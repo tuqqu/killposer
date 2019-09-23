@@ -1,6 +1,6 @@
 # Killposer
 
-### Easy way to find and delete unused composer `/vendor/` directories.
+### Easy way to find and delete composer `/vendor/` directories you do not need any more.
 
 ![](/doc/usage.gif)
 
@@ -28,6 +28,8 @@ Having installed it globally you may now use `killposer` binary:
 ```bash
 $ killposer 
 ```
+
+Use `W` and `S` keys to move up/down, `K` to delete the selected vendor and `Q` to quit.
 
 ### Command options
 
