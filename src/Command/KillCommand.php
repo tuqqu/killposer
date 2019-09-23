@@ -15,9 +15,9 @@ final class KillCommand extends Command
     {
         $this
             ->setName('kill')
-            ->setDescription('Easy find and delete unused composer /vendor/ directories.')
+            ->setDescription('Find and delete unused composer /vendor/ directories.')
             ->addOption('path', 'p', InputOption::VALUE_OPTIONAL, 'Path to search in.', '.')
-            ->addOption('byte-format', 'b', InputOption::VALUE_REQUIRED, 'Bytes format: kib, mib, gib.', 'mib')
+            ->addOption('byte-format', 'f', InputOption::VALUE_REQUIRED, 'Bytes format: kib, mib, gib.', 'mib')
             ->addOption('byte-threshold', 't', InputOption::VALUE_REQUIRED, 'Directory size after which there is no need to keep calculating it.')
         ;
     }
