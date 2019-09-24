@@ -1,6 +1,6 @@
 {
     "name": "tuqqu/killposer",
-    "description": "Find and delete composer /vendor/ directories you do not need any more.",
+    "description": "Find and delete composer-created /vendor/ directories that you do not need any more.",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -12,8 +12,8 @@
     "require": {
         "php": ">=7.1",
         "ext-readline": "*",
-        "symfony/filesystem": "^4.3",
-        "symfony/console": "^4.3"
+        "symfony/filesystem": "^3.0|^4.0",
+        "symfony/console": "^3.0|^4.0"
     },
     "autoload": {
         "psr-4": {
