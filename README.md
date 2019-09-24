@@ -1,10 +1,10 @@
 # Killposer
 
-### Easy way to find and delete composer `/vendor/` directories you do not need any more.
+### Easy way to find and delete composer-created `/vendor/` directories that you do not need any more.
 
 ![](/doc/usage.gif)
 
-This is a cli-tool to find all composer vendor directories in a given path and remove all those you do not need any more.
+This is a cli-tool to find Composer-created vendor directories on your system, list their path and size, and it allows you delete ones that you don't need to free up storage space.
 
 The project is inspired by [npkill](https://github.com/voidcosmos/npkill).
 
